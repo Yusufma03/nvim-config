@@ -105,11 +105,11 @@ if utils.executable("pylsp") then
       pylsp = {
         plugins = {
           pylint = { enabled = true, executable = "pylint" },
-          pyflakes = { enabled = false },
+          pyflakes = { enabled = true },
           pycodestyle = { enabled = false },
           jedi_completion = { fuzzy = true },
           pyls_isort = { enabled = true },
-          pylsp_mypy = { enabled = true },
+          pylsp_mypy = { enabled = false },
         },
       },
     },
